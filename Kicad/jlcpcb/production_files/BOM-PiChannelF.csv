@@ -1,0 +1,8 @@
+Comment,Designator,Footprint,LCSC
+ChannelF Edge,E1,ChannelF_EDGE,
+Diode,D1,D_DO-35_SOD27_P7.62mm_Horizontal,
+Conn_01x20,J1,PinSocket_1x20_P2.54mm_Vertical,
+SW_Push,SW1,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS,
+Conn_01x20,J2,PinSocket_1x20_P2.54mm_Vertical,
+330,R1,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,
+LED,D2,LED_D3.0mm,

@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+D1,Diode,D_DO-35_SOD27_P7.62mm_Horizontal,75.85,-62.11,-90.0,top
+D2,LED,LED_D3.0mm,76.405,-29.275,0.0,top
+E1,ChannelF Edge,ChannelF_EDGE,98.972,-151.05,0.0,top
+J1,Conn_01x20,PinSocket_1x20_P2.54mm_Vertical,108.825,-52.215,0.0,bottom
+J2,Conn_01x20,PinSocket_1x20_P2.54mm_Vertical,91.05,-52.215,0.0,bottom
+R1,330,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,77.815,-38.225,0.0,top
+SW1,SW_Push,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS,124.22,-29.5325,0.0,bottom

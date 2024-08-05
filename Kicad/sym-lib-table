@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ChannelF")(type "KiCad")(uri "${KIPRJMOD}/ChannelF.kicad_sym")(options "")(descr ""))
+  (lib (name "ChannelF_Logo")(type "KiCad")(uri "${KIPRJMOD}/ChannelF_Logo.kicad_sym")(options "")(descr ""))
+)
