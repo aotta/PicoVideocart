@@ -9,13 +9,16 @@ Since now it was only tested on SABA Videoplay (PAL), but it should work in Fair
 
 ![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba.jpg)
 ![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba1.jpg)
-![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba2.jpg)
+![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba4.jpg)
+![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba3.jpg)
+![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba5.jpg)
+
 
 Kicad project and gerbers files for the pcb are in the PCB folder, you need only a diode and a push buttons for resetting the cart if needed or want restart. 
 Add you pico clone, and flash the firmware ".uf2" in the Pico by connecting it while pressing button on Pico and drop it in the opened windows on PC.
-After flashed with firmware, and every time you have to change your ROMS repository, you can simply connect the Pico to PC and drag&drop "BIN" files  into.
+"Bin" files should be added in flash using Arduino IDE plugin ( https://github.com/earlephilhower/arduino-littlefs-upload )
 
-More info on AtariAge forum: https://forums.atariage.com/topic/366660-picoleco-a-diy-multicart-for-colecovision/
+More info on AtariAge forum: https://forums.atariage.com/topic/274416-the-official-channel-f-thread/page/56/
 
 
 Even if the diode should protect your console, **DO NOT CONNECT PICO WHILE INSERTED IN A POWERED ON CONSOLE!**
