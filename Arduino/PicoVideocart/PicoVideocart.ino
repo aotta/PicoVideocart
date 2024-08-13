@@ -24,6 +24,8 @@
 
 #include "loader.hpp"
 #include "romc.hpp"
+ #include "pico/stdlib.h"
+ #include "hardware/adc.h"
 
 #include <SPI.h>
 //#include <SD.h>
@@ -121,8 +123,8 @@ void setup1() { // Core 1
     gpio_init_val(WRITE_PIN, GPIO_IN, false);
     gpio_init_val(PHI_PIN, GPIO_IN, false);
     gpio_init_val(INTREQ_PIN, GPIO_OUT, true);
-    gpio_init_val(DBUS_OUT_CE_PIN, GPIO_OUT, true);
-    gpio_init_val(DBUS_IN_CE_PIN, GPIO_OUT, false);
+    //gpio_init_val(DBUS_OUT_CE_PIN, GPIO_OUT, true);
+    //gpio_init_val(DBUS_IN_CE_PIN, GPIO_OUT, false);
     gpio_init_val(LED_BUILTIN, GPIO_OUT, true);
     gpio_put(INTREQ_PIN,true);
 
@@ -210,7 +212,7 @@ void __not_in_flash_func(loop)() { // Core 0
     //Serial.println(pc0);
     
    
-    if ((load_new_game_trigger)||(gpio_get(25)==0)) {
+    if ((load_new_game_trigger)) {
         load_new_game_trigger = false;
           while (pc0 >= 0x800) {
             ; // We need to wait until the menu has jumped to 0 before disconnecting
@@ -234,5 +236,7 @@ void __not_in_flash_func(loop)() { // Core 0
          gpio_put(25,1);
     
     }
-     
+     gpio_put(LED_BUILTIN, true);
+     sleep_ms(100);
+      
 };

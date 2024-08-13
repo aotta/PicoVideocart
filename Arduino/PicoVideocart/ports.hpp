@@ -186,7 +186,7 @@ class Launcher : public IOPort {
                           //  Serial.println("select game:");
                              if (file_data[file_index].isFile) {
                                 load_new_game_trigger = true; // FIXME: talk to core 0 through the stack instead
-                                gpio_put(25,0); // turn off led
+                                //gpio_put(LED_BUILTIN, false); // turn off led
                             }
                             break;
                         case NONE_FLAG:

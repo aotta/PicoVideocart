@@ -58,8 +58,6 @@ inline constexpr uint8_t WRITE_PIN = 15;
 inline constexpr uint8_t PHI_PIN = 14;
 inline constexpr uint8_t DBUS0_PIN = 0;
 inline constexpr uint8_t ROMC0_PIN = 8;
-inline constexpr uint8_t DBUS_IN_CE_PIN = 25;
-inline constexpr uint8_t DBUS_OUT_CE_PIN = 25;
 
 // Core 1 variables
 extern uint8_t dbus;                                     // Written to by write_dbus
@@ -114,6 +112,8 @@ __force_inline void write_dbus(uint8_t value, uint16_t addr_source) {
         gpio_set_mask(dbus << DBUS0_PIN);
         gpio_set_dir_out_masked(0xFF << DBUS0_PIN);  // Set DBUS to output mode
         asm inline("nop;nop;nop;nop;");
+      //  if ((addr_source >= 0x17c4) &&(addr_source<=0x1a00)) gpio_put(LED_BUILTIN, false);
+        if ((addr_source >= 0x1802) &&(addr_source<=0x1a00)) gpio_put(LED_BUILTIN, false);
          // while(gpio_get(WRITE_PIN)==1);
     }
 }
