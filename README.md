@@ -5,6 +5,10 @@ This is a forked version of https://github.com/ZX-80/PicoVideocart (see original
 
 Since now it was only tested on SABA Videoplay (PAL), but it should work in Fairchild Channel-F (NTSC) too.
 
+Thanks to my friend Dave, here's some more info and the label for the shell:
+https://www.nightfallcrew.com/05/09/2024/flash-multicart-for-saba-videoplay-fairchild-channel-f/
+
+
 **WARNING!** "purple" Pico has not the same pinout of original Raspberry "green" ones, you MUST use the clone or you may damage your hardware.
 
 ![ScreenShot](https://raw.githubusercontent.com/aotta/PicoVideocart/main/pictures/saba.jpg)
