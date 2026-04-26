@@ -24,7 +24,9 @@ https://www.nightfallcrew.com/05/09/2024/flash-multicart-for-saba-videoplay-fair
 Kicad project and gerbers files for the pcb are in the PCB folder, you need only a diode and a push buttons for resetting the cart if needed or want restart. 
 Add you pico clone, and flash the firmware ".uf2" in the Pico by connecting it while pressing button on Pico and drop it in the opened windows on PC.
 
-"Bin" files should be added in flash using Arduino IDE plugin ( https://github.com/earlephilhower/arduino-littlefs-upload )
+in V.1.0, "Bin" files should be added in flash using Arduino IDE plugin ( https://github.com/earlephilhower/arduino-littlefs-upload )
+be sure to put boot.bin with other games, it's the menu selector.
+
 
 **NOTE: V.1.1 use now Adafruit stack USB and you can upload bin files by connecting the card to a PC via usb cable and copying them on the flash folder. First time flash folder need to be formatted as FAT disk.
 Now the multicart check at boot if it's inserted in console, if you get flashing led at boot, reset Picovideocart or powercycle the console until you get a steady flash led.
