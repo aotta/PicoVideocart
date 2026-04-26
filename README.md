@@ -27,6 +27,7 @@ Add you pico clone, and flash the firmware ".uf2" in the Pico by connecting it w
 "Bin" files should be added in flash using Arduino IDE plugin ( https://github.com/earlephilhower/arduino-littlefs-upload )
 
 **NOTE: V.1.1 use now Adafruit stack USB and you can upload bin files by connecting the card to a PC via usb cable and copying them on the flash folder. First time flash folder need to be formatted as FAT disk.
+Now the multicart check at boot if it's inserted in console, if you get flashing led at boot, reset Picovideocart or powercycle the console until you get a steady flash led.
 
 More info on AtariAge forum: https://forums.atariage.com/topic/274416-the-official-channel-f-thread/page/56/
 
